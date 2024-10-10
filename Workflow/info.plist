@@ -6,6 +6,19 @@
 	<string>com.firefingers21.tagfinder</string>
 	<key>connections</key>
 	<dict>
+		<key>28C78BAF-FBD0-439E-8A50-2834B7179274</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8C3BC27D-1039-448D-AB3D-6E6060770955</key>
 		<array>
 			<dict>
@@ -34,12 +47,25 @@
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Go back to Tag List</string>
+				<string>Return to Tag List</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
 		<key>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -63,6 +89,121 @@
 	<string>Tag Finder</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>ED2C1428-6163-4A5C-979E-7DB96FF3A172</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>28C78BAF-FBD0-439E-8A50-2834B7179274</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>BFC80936-3BD0-499D-8CD1-2E6BCD052D4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>3</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>getTags.sh</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>{const:alfred_workflow_description}</string>
+				<key>title</key>
+				<string>{const:alfred_workflow_name}</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>listTags</string>
+				<key>inputmode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -99,84 +240,20 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>getTags.sh</string>
-				<key>subtext</key>
-				<string>{const:alfred_workflow_description}</string>
-				<key>title</key>
-				<string>{const:alfred_workflow_name}</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>inboundconfig</key>
-			<dict>
-				<key>externalid</key>
-				<string>listTags</string>
-				<key>inputmode</key>
-				<integer>1</integer>
+				<key>json</key>
+				<string>{
+  "alfredworkflow" : {
+    "arg": "{query}",
+    "config" : {
+      "columncount" : "{var:gridColumns}"
+    }
+  }
+}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.json</string>
 			<key>uid</key>
-			<string>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>ED2C1428-6163-4A5C-979E-7DB96FF3A172</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>BFC80936-3BD0-499D-8CD1-2E6BCD052D4E</string>
+			<string>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -211,27 +288,44 @@ Search for tags using the `tagfinder` keyword. Select a tag to view all associat
 
 ![Searching for tags](images/about/keyword.png)
 
+Type to filter files by name. Select a file to action it.
+
+![Searching for files in the Grid View](images/about/gridView.png)
+
 * &lt;kbd&gt;↩&lt;/kbd&gt; Open file
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal file in Finder
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Go back to Tag List
-* &lt;kbd&gt;⇧&lt;/kbd&gt; Tap to Quick Look file</string>
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Return to Tag List
+* &lt;kbd&gt;⇧&lt;/kbd&gt; Tap to Quick Look file
+
+File previews are configurable in the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/) in addition to the number of columns they take up.</string>
 	<key>uidata</key>
 	<dict>
-		<key>8C3BC27D-1039-448D-AB3D-6E6060770955</key>
+		<key>28C78BAF-FBD0-439E-8A50-2834B7179274</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>220</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>120</real>
+		</dict>
+		<key>8C3BC27D-1039-448D-AB3D-6E6060770955</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>File Picker</string>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>120</real>
 		</dict>
 		<key>A3CB8546-C4C5-45B2-8B7A-EA0CA103956D</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>410</real>
+			<real>570</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -239,26 +333,37 @@ Search for tags using the `tagfinder` keyword. Select a tag to view all associat
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
+			<key>note</key>
+			<string>Tag Finder &amp; Keyword</string>
 			<key>xpos</key>
-			<real>30</real>
+			<real>175</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>120</real>
 		</dict>
 		<key>BFC80936-3BD0-499D-8CD1-2E6BCD052D4E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>410</real>
+			<real>570</real>
 			<key>ypos</key>
 			<real>120</real>
+		</dict>
+		<key>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>150</real>
 		</dict>
 		<key>ED2C1428-6163-4A5C-979E-7DB96FF3A172</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>410</real>
+			<real>570</real>
 			<key>ypos</key>
 			<real>15</real>
 		</dict>
@@ -289,6 +394,31 @@ Search for tags using the `tagfinder` keyword. Select a tag to view all associat
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>defaultvalue</key>
+				<integer>6</integer>
+				<key>markercount</key>
+				<integer>12</integer>
+				<key>maxvalue</key>
+				<integer>12</integer>
+				<key>minvalue</key>
+				<integer>1</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>File Grid Columns</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>gridColumns</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>default</key>
 				<true/>
 				<key>required</key>
@@ -297,7 +427,7 @@ Search for tags using the `tagfinder` keyword. Select a tag to view all associat
 				<string>Show File Previews</string>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>Enable a rich preview for images and PDFs</string>
 			<key>label</key>
 			<string>Appearance</string>
 			<key>type</key>
@@ -305,11 +435,28 @@ Search for tags using the `tagfinder` keyword. Select a tag to view all associat
 			<key>variable</key>
 			<string>showIcons</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Search by file path</string>
+			</dict>
+			<key>description</key>
+			<string>Match the file path rather than just the filename</string>
+			<key>label</key>
+			<string>Search Filters</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>useFilePath</string>
+		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2024.9</string>
+	<string>2024.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-tag-finder</string>
 </dict>
