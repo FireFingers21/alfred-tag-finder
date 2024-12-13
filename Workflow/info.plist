@@ -280,7 +280,7 @@
 	<key>readme</key>
 	<string>## Setup
 
-This workflow requires [tag](https://github.com/jdberry/tag/) to function. Can be installed via Homebrew with `brew install tag`
+This workflow requires [tag](https://github.com/jdberry/tag/) to function, which can be installed [via Homebrew](https://formulae.brew.sh/formula/tag).
 
 ## Usage
 
@@ -295,7 +295,7 @@ Type to filter files by name. Select a file to action it.
 * &lt;kbd&gt;↩&lt;/kbd&gt; Open file
 * &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal file in Finder
 * &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Return to Tag List
-* &lt;kbd&gt;⇧&lt;/kbd&gt; Tap to Quick Look file
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;Y&lt;/kbd&gt; (or tap &lt;kbd&gt;⇧&lt;/kbd&gt;) Quick Look file
 
 File previews are configurable in the [Workflow's Configuration](https://www.alfredapp.com/help/workflows/user-configuration/) in addition to the number of columns they take up.</string>
 	<key>uidata</key>
@@ -456,7 +456,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.10</string>
+	<string>2024.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-tag-finder</string>
 </dict>

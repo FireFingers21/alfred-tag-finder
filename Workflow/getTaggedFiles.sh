@@ -11,6 +11,7 @@ mimeType=$(file -b --mime-type "${file}")
 
 echo '{
     "uid": "'"${file}"'",
+    "type": "file",
     "title": "'"${fileName}"'",
     "subtitle": "'"${file}"'",
     "arg": "'"${file}"'",
