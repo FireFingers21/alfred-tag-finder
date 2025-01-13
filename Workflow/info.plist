@@ -149,6 +149,39 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>columncount</key>
+				<integer>6</integer>
+				<key>filterable</key>
+				<true/>
+				<key>fixedorder</key>
+				<false/>
+				<key>imageaspect</key>
+				<integer>0</integer>
+				<key>inputfile</key>
+				<string>getTaggedFiles.sh</string>
+				<key>inputtype</key>
+				<integer>1</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>showsubtitles</key>
+				<true/>
+				<key>showtitles</key>
+				<true/>
+				<key>subtitlesinfooter</key>
+				<true/>
+				<key>titlesinfooter</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.grid</string>
+			<key>uid</key>
+			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -203,39 +236,6 @@
 			<string>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>columncount</key>
-				<integer>6</integer>
-				<key>filterable</key>
-				<true/>
-				<key>fixedorder</key>
-				<false/>
-				<key>imageaspect</key>
-				<integer>0</integer>
-				<key>inputfile</key>
-				<string>getTaggedFiles.sh</string>
-				<key>inputtype</key>
-				<integer>1</integer>
-				<key>loadingtext</key>
-				<string></string>
-				<key>showsubtitles</key>
-				<true/>
-				<key>showtitles</key>
-				<true/>
-				<key>subtitlesinfooter</key>
-				<true/>
-				<key>titlesinfooter</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.userinterface.grid</string>
-			<key>uid</key>
-			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -456,7 +456,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.12</string>
+	<string>2025.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-tag-finder</string>
 </dict>

@@ -4,7 +4,7 @@ echo '{"items": ['
 
 while IFS= read -r tag; do
 tagCount=$(echo ${tag} | awk '{ print $1 }')
-tagName=$(echo ${tag} | awk '{ print $2 }')
+tagName=$(echo ${tag} | awk '{ $1=""; print substr($0, 2) }')
 
 [[ ${tagCount} -eq 1 ]] && plural="file" || plural="files"
 
