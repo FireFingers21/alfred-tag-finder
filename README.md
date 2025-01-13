@@ -10,9 +10,12 @@ This workflow requires [tag](https://github.com/jdberry/tag/) to function, which
 
 ## Usage
 
-Search for tags using the `tagfinder` keyword. Select a tag to view all associated files.
+Search for tags using the `tagfinder` keyword.
 
 ![Searching for tags](Workflow/images/about/keyword.png)
+
+* <kbd>↩</kbd> Show files in Alfred
+* <kbd>⌘</kbd><kbd>↩</kbd> Show files in a Finder window
 
 Type to filter files by name. Select a file to action it.
 

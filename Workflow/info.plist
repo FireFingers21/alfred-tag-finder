@@ -64,6 +64,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BCC8130-8BC8-4922-A148-B0351997D096</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal tag in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</key>
 		<array>
@@ -149,39 +159,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>columncount</key>
-				<integer>6</integer>
-				<key>filterable</key>
-				<true/>
-				<key>fixedorder</key>
-				<false/>
-				<key>imageaspect</key>
-				<integer>0</integer>
-				<key>inputfile</key>
-				<string>getTaggedFiles.sh</string>
-				<key>inputtype</key>
-				<integer>1</integer>
-				<key>loadingtext</key>
-				<string></string>
-				<key>showsubtitles</key>
-				<true/>
-				<key>showtitles</key>
-				<true/>
-				<key>subtitlesinfooter</key>
-				<true/>
-				<key>titlesinfooter</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.userinterface.grid</string>
-			<key>uid</key>
-			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -240,6 +217,39 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>columncount</key>
+				<integer>6</integer>
+				<key>filterable</key>
+				<true/>
+				<key>fixedorder</key>
+				<false/>
+				<key>imageaspect</key>
+				<integer>0</integer>
+				<key>inputfile</key>
+				<string>getTaggedFiles.sh</string>
+				<key>inputtype</key>
+				<integer>1</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>showsubtitles</key>
+				<true/>
+				<key>showtitles</key>
+				<true/>
+				<key>subtitlesinfooter</key>
+				<true/>
+				<key>titlesinfooter</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.grid</string>
+			<key>uid</key>
+			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>json</key>
 				<string>{
   "alfredworkflow" : {
@@ -276,6 +286,29 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>savedSearch.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8BCC8130-8BC8-4922-A148-B0351997D096</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Setup
@@ -284,9 +317,12 @@ This workflow requires [tag](https://github.com/jdberry/tag/) to function, which
 
 ## Usage
 
-Search for tags using the `tagfinder` keyword. Select a tag to view all associated files.
+Search for tags using the `tagfinder` keyword.
 
 ![Searching for tags](images/about/keyword.png)
+
+* &lt;kbd&gt;↩&lt;/kbd&gt; Show files in Alfred
+* &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Show files in a Finder window
 
 Type to filter files by name. Select a file to action it.
 
@@ -307,7 +343,18 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>125</real>
+		</dict>
+		<key>8BCC8130-8BC8-4922-A148-B0351997D096</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Show Tag in Finder</string>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 		<key>8C3BC27D-1039-448D-AB3D-6E6060770955</key>
 		<dict>
@@ -318,7 +365,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>385</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>125</real>
 		</dict>
 		<key>A3CB8546-C4C5-45B2-8B7A-EA0CA103956D</key>
 		<dict>
@@ -327,7 +374,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>570</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>235</real>
 		</dict>
 		<key>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</key>
 		<dict>
@@ -338,7 +385,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>175</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>125</real>
 		</dict>
 		<key>BFC80936-3BD0-499D-8CD1-2E6BCD052D4E</key>
 		<dict>
@@ -347,7 +394,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>570</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>125</real>
 		</dict>
 		<key>C1C727FF-52D0-4BDA-B913-7AD5391CD39D</key>
 		<dict>
@@ -356,7 +403,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 			<key>xpos</key>
 			<real>330</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>155</real>
 		</dict>
 		<key>ED2C1428-6163-4A5C-979E-7DB96FF3A172</key>
 		<dict>
@@ -456,7 +503,7 @@ File previews are configurable in the [Workflow's Configuration](https://www.alf
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2025.1</string>
+	<string>2025.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/FireFingers21/alfred-tag-finder</string>
 </dict>
