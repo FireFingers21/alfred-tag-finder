@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.firefingers21.tagfinder</string>
+	<key>category</key>
+	<string>Shared</string>
 	<key>connections</key>
 	<dict>
 		<key>28C78BAF-FBD0-439E-8A50-2834B7179274</key>
@@ -37,7 +39,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Reveal file in Finder</string>
+				<string>⌘↩ Reveal file in Finder</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -47,7 +49,7 @@
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Return to Tag List</string>
+				<string>← Return to Tag List</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -62,7 +64,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -70,7 +72,7 @@
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Reveal tag in Finder</string>
+				<string>⌘↩ Reveal tag in Finder</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -159,6 +161,39 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>columncount</key>
+				<integer>6</integer>
+				<key>filterable</key>
+				<true/>
+				<key>fixedorder</key>
+				<false/>
+				<key>imageaspect</key>
+				<integer>0</integer>
+				<key>inputfile</key>
+				<string>getTaggedFiles.sh</string>
+				<key>inputtype</key>
+				<integer>1</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>showsubtitles</key>
+				<true/>
+				<key>showtitles</key>
+				<true/>
+				<key>subtitlesinfooter</key>
+				<true/>
+				<key>titlesinfooter</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.grid</string>
+			<key>uid</key>
+			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -213,39 +248,6 @@
 			<string>B62B9224-3274-40FC-BDA0-B4AE347F9CB0</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>columncount</key>
-				<integer>6</integer>
-				<key>filterable</key>
-				<true/>
-				<key>fixedorder</key>
-				<false/>
-				<key>imageaspect</key>
-				<integer>0</integer>
-				<key>inputfile</key>
-				<string>getTaggedFiles.sh</string>
-				<key>inputtype</key>
-				<integer>1</integer>
-				<key>loadingtext</key>
-				<string></string>
-				<key>showsubtitles</key>
-				<true/>
-				<key>showtitles</key>
-				<true/>
-				<key>subtitlesinfooter</key>
-				<true/>
-				<key>titlesinfooter</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.userinterface.grid</string>
-			<key>uid</key>
-			<string>8C3BC27D-1039-448D-AB3D-6E6060770955</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
